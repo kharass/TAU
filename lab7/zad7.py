@@ -34,10 +34,10 @@ def print_board(board):
 
 def move():
 	try:
-		move = input("Podaj ruch: up - ruch w górę, down - ruch w dół, left - ruch w lewo, right - ruch w prawo\n S - start, F - koniec, O - przeszkoda, P - gracz\n")
+		move = input("Wpisz ruch jaki chcesz wykonać: up - ruch w górę, down - ruch w dół, ,right - ruch w prawo, left - ruch w lewo\n S - start, F - koniec gry, O - przeszkoda, P - gracz\n")
 		return move_validation(move)
 	except ValueError:
-		print("Nieprawidłowy wpis. Podaj up, down, left lub right\n")
+		print("Niepoprawnie wpisałeś ruch. Wpisz up, down, right lub left\n")
 
 def move_validation(move):
 	global field
